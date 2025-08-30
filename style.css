@@ -11,13 +11,13 @@ html{
 }
 #nav-bar{
     overflow: hidden;
-    background-color: rgba(57, 95, 62, 0.5);
+    background-color: rgba(0, 24, 38, 0.553);
     position: fixed; 
     width: 100%; 
-    box-shadow: 0 3px 6px rgba(57, 95, 62, 0.5);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
 }
 #nav-bar li{
-    float: right;
+    float: left;
     display: block;
     align-items: center;
     color: #f2f2f2;
@@ -33,7 +33,7 @@ html{
 }
 
 .hero{
-    background-image: linear-gradient(120deg, rgba(212, 252, 121, 0.7) 0%, rgba(150, 230, 161, 0.7) 100%), url(/img/background.jpg);
+    background-image: linear-gradient(120deg, rgba(0, 30, 165, 0.7) 0%, rgba(5, 4, 42, 0.7) 100%), url(/img/background.jpg);
     width: 100%;
     height: 650px;
     background-repeat: no-repeat;
@@ -44,7 +44,7 @@ html{
     overflow: hidden;
 }
 .textos-hero{
-    height: 500px;
+    height: 550px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -62,7 +62,7 @@ html{
     display: inline-block;
     text-decoration: none;
     padding: 12px 15px;
-    background: #12ff92;
+    background: #0d097b;
     border-radius: 8px;
     color: white;
 }
@@ -116,16 +116,16 @@ html{
 .cta{
     display: inline-block;
     text-decoration: none;
-    background-image: linear-gradient(120deg, rgba(212, 252, 121, 0.7) 0%, rgba(150, 230, 161, 0.7) 100%);
+    background-image: linear-gradient(120deg, rgba(10, 36, 123, 0.7) 0%, rgba(25, 29, 92, 0.7) 100%);
     padding: 12px 15px;
     border-radius: 8px;
-    color: #2a6d4d ;
+    color: #ffffff ;
 }
 /*info*/
 .info{
     
-    background-image: linear-gradient(120deg, rgba(212, 252, 121, 0.7) 0%, rgba(150, 230, 161, 0.7) 100%);
-    color: #2a6d4d;
+    background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.7) 0%, rgba(31, 12, 154, 0.7) 100%);
+    color: #ffffff;
 }
 /*Cards*/
 .content-cards{
@@ -149,7 +149,7 @@ html{
 }
 .card i{
     margin: 30px 0 20px 0;
-    color: seagreen;
+    color: rgb(46, 69, 139);
     font-size: 50px;
 }
 .card p{
@@ -161,7 +161,7 @@ html{
 /*Gallery*/
 
 .galeria{
-    background: seagreen;
+    background: rgb(1, 0, 63);
 }
 .galeria-cont{
     width: 100%;
@@ -198,7 +198,7 @@ html{
 /*Footer*/
 
 footer{
-    background: seagreen;
+    background: rgb(0, 7, 60);
     color: white;
 }
 
@@ -243,7 +243,7 @@ input[type="submit"]:hover{
 
 @media screen and (max-width:800px) {
     .textos-hero h1{
-        text-align: center;
+        text-align: left;
         font-size: 50px;
     }
     .titulo{
