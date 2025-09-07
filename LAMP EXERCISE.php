@@ -1,4 +1,57 @@
-// Consulta para obtener los datos de la tabla Productos
+$> sudo apt-get install mysql-server
+
+$> systemctl status mysql
+
+sudo apt-get install php
+
+$: php --version
+
+$: sudo mysql -u root -p
+
+mysql> CREATE DATABASE tienda;
+
+CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
+FLUSH PRIVILEGES;
+
+mysql> USE tienda;
+
+CREATE TABLE Productos (
+  ProductoID INT PRIMARY KEY,
+  NombreProducto VARCHAR(50),
+  Descripcion VARCHAR(255),
+  Precio DECIMAL(10, 2),
+  Stock INT
+);
+
+INSERT INTO Productos (ProductoID, NombreProducto, Descripcion, Precio, Stock)
+VALUES 
+  (1, 'Camiseta', 'Camiseta negra simple de talla unica', 10, 16),
+  (2, 'Pantalon', 'Pantalon argo azul tipo chino', 20, 24),
+  (3, 'Gorra', 'Gorra azul con el logo de los Yankees', 15, 32),
+  (4, 'Zapatillas', 'Zapatillas de running de color blanco y verde', 35, 13);
+
+
+// Librerar puerto MV
+// sudo ufw allow 80/tcp
+// sudo ufw reload
+
+
+
+
+
+<?php
+$servername = "localhost";
+$username = "tu_usuario"; 
+$password = "tu_password"; 
+$database = "tu_base_datos"; 
+
+$conn = new mysqli($servername, $username, $password, $database);
+
+if ($conn->connect_error) {
+    die("Error de conexión: " . $conn->connect_error);
+}
+
 $sql = "SELECT ProductoID, NombreProducto, Descripcion FROM Productos";
 $result = $conn->query($sql);
 
